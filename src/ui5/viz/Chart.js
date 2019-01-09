@@ -1157,7 +1157,7 @@ sap.ui.define(
        * @override
        */
       setWidth(sWidth) {
-        this.setProperty('width', sWidth, true) // do not rerender
+        this.setProperty('width', sWidth, false) // DO rerender
         this._chart ? this._chart.resize({
           width: this.getWidth()
         }) : undefined
